@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Scope</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+	var number=5;
+document.writeln(square(number)+"<br>");
+	function square(number)
+		{
+			var number=2;
+			document.writeln(number+"<br>");
+	 	 return number * number;
+			document.writeln(number+"<br>");
+		}
+			document.writeln(number+"<br>");
+	</script>
+	</body>
+</html>
