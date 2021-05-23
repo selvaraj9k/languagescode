@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>passing array to function</title>
+<script>
+function start()
+{
+var a = [ 1, 2, 3, 4, 5 ];
+document.write("the original array");
+for(var i=0;i<a.length;i++)
+{
+document.write(a[i]);
+}
+modifyArray(a);//function call
+modifyElement( a[ 3 ] );//function call
+}function modifyArray( a )// passing entire array by reference
+{
+document.write("<br><h4>Effects of passing entire array by reference</h4>");
+document.write("the modified array");
+for (var i=0; i<a.length;i++ )
+{
+a[i] =a[i]*2;
+document.write(a[i]);
+}
+}
+function modifyElement( e )//passing array element by value
+{
+document.write("<br><h4>Effects of passing array element by value</h4>");
+e *= 2;
+document.write("after modifying element"+e);
+}
+start();// function call
+</script>
+</head>
+<body></body>
+</html>
