@@ -1,0 +1,40 @@
+<!Doctype Absolute Positioning>
+<html>
+	<head>
+		<meta charset ="utf=8">
+		<title>Absolute Positioning</title>
+                <style type = "text/css">
+		.image1
+		{
+			position:absolute;
+			top:0px;
+			left:0px;
+			z-index:1;
+			width:100%;
+			height:100%;
+		}
+		.image2
+		{
+			position:absolute;
+			top:15px;
+			left:25px;
+			z-index:2;
+		}
+		.text
+		{
+			position:absolute;
+			top:25px;
+			left:100px;
+			z-index:3;
+			font-size:20pt;
+			font-family:Arial;
+			color:Green;
+		}
+		</style>
+	</head>
+	<body>
+	<img src="kec.jpeg" class="image1"/>
+	<img src="logo.png" class="image2"/>
+	<p class="text">KEC</p>
+	</body>
+</html>
